@@ -29,6 +29,7 @@ const Projects = () => {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-80 object-fill"
+                  loading="lazy"
                 />
               </div>
 

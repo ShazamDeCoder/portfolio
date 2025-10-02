@@ -33,9 +33,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            I'm a passionate frontend developer with 1+ years of experience building modern web applications.
-            I specialize in React js and creating seamless user experiences that combine beautiful 
-            design with robust functionality.
+            I'm Mubarak, a passionate <strong>Frontend Developer in Nigeria</strong> with 1+ years of experience building <strong>modern web applications</strong>. I specialize in <strong>React.js</strong> and love creating seamless user experiences that combine beautiful design with robust functionality.
           </p>
         </div>
 
@@ -43,13 +41,15 @@ const About = () => {
           <div>
             <h3 className="text-3xl font-bold mb-6 text-green-600">My Journey</h3>
             <p className="text-gray-600 text-xl leading-relaxed mb-6 text-justify">
-              Started as a self-taught developer, I quickly fell in love with the creative problem-solving 
-              aspect of frontend development. From building my first HTML page to creating complex React 
-              applications, I've consistently pushed myself to learn new technologies and improve my craft.
+              Starting as a self-taught developer, I quickly fell in love with 
+              the creative problem-solving aspect of <strong>frontend development</strong>. 
+              From building my first HTML page to creating complex <strong>React applications</strong>, 
+              I've consistently pushed myself to learn new technologies and improve my craft.
             </p>
             <p className="text-gray-600 text-xl leading-relaxed text-justify">
-              Today, I focus on creating exceptional user experiences using modern frameworks and tools. 
-              I believe in writing clean, maintainable code and staying up-to-date with the latest 
+              Today, I focus on delivering exceptional digital experiences using 
+              modern frameworks and tools. I believe in writing <strong>clean, 
+              maintainable code</strong> while staying up-to-date with the latest 
               industry trends and best practices.
             </p>
           </div>
@@ -58,7 +58,7 @@ const About = () => {
             {highlights.map((item, index) => (
               <div
                 key={index}
-                className="border-2 border-green-500 p-6 text-center  rounded-lg hover:shadow-lg transition-shadow"
+                className="border-2 border-green-500 p-6 text-center rounded-lg hover:shadow-lg transition-shadow"
               >
                 <div className="text-green-600 mb-4 flex justify-center">{item.icon}</div>
                 <h4 className="text-gray-600 font-bold mb-2">{item.title}</h4>
@@ -67,7 +67,7 @@ const About = () => {
             ))}
           </div>
         </div>
-        </div>
+      </div>
     </section>
   );
 };

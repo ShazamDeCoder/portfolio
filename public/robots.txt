@@ -1,0 +1,10 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Block private files (optional, not needed for public site)
+Disallow: /node_modules/
+Disallow: /src/
+
+# Sitemap link (pointing to your deployed site)
+Sitemap: https://portfolio-eight-amber-24.vercel.app/sitemap.xml

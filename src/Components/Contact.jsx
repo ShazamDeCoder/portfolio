@@ -138,7 +138,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Details */}
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-3 sm:space-y-4 ">
               {contactInfo.map((item, index) => (
                 <a
                   key={index}
@@ -172,18 +172,7 @@ const Contact = () => {
                 ))}
               </div>
             </div>
-
-            {/* Availability */}
-            <div className="border-2 border-green-600 p-3 sm:p-4 rounded-lg">
-              <div className="flex items-center gap-2 sm:gap-3 mb-2">
-                <div className="w-3 h-3 sm:w-4 sm:h-4 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="font-semibold text-sm sm:text-base">Available for Work</span>
-              </div>
-              <p className="text-xs sm:text-sm text-gray-600">
-                I'm currently accepting new projects and collaborations. Let's create something amazing together!
-              </p>
-            </div>
-          </div>
+          </div> 
         </div>
       </div>
     </section>

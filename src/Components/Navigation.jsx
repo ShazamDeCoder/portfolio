@@ -18,13 +18,12 @@ const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      // detect active section (ignores Resume since it's a file)
       navItems.forEach((item) => {
         if (item.name !== "Resume") {
           const section = document.querySelector(item.href);
           if (section) {
             const rect = section.getBoundingClientRect();
-            if (rect.top <= 100 && rect.bottom >= 100) {
+            if (rect.top <= 120 && rect.bottom >= 120) {
               setActiveSection(item.href.substring(1));
             }
           }
@@ -44,6 +43,7 @@ const Navigation = () => {
 
   return (
     <nav
+      aria-label="Main Navigation"
       className={`fixed top-0 left-1/2 transform -translate-x-1/2 transition-all duration-300
         ${isScrolled
           ? "bg-gray/80 backdrop-blur-lg py-3 rounded-full max-w-xl mt-4 shadow-lg ring-1 ring-gray-300"
@@ -52,40 +52,48 @@ const Navigation = () => {
     >
       <div className="mx-auto px-6">
         <div className="flex items-center justify-center">
+          
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <ul className="hidden md:flex items-center space-x-8">
             {navItems.map((item) =>
               item.name === "Resume" ? (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  download
-                  className="ml-12 px-4 py-2 border rounded-full bg-green-600 text-white font-semibold hover:bg-green-700 transition-colors duration-200 animate-pulse"
-                >
-                  {item.name}
-                </a>
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    download
+                    className="ml-12 px-4 py-2 border rounded-full bg-green-600 text-white font-semibold hover:bg-green-700 transition-colors duration-200 animate-pulse"
+                  >
+                    {item.name}
+                  </a>
+                </li>
               ) : (
-                <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className={`transition-colors duration-200 relative group ${
-                    activeSection === item.href.substring(1)
-                      ? "text-green-600 font-semibold"
-                      : "text-gray-600 font-semibold hover:text-green-600"
-                  }`}
-                >
-                  {item.name}
-                  <span
-                    className={`absolute -bottom-1 left-0 h-0.5 bg-green-500 transition-all duration-200 ${
+                <li key={item.name}>
+                  <button
+                    onClick={() => scrollToSection(item.href)}
+                    aria-current={
                       activeSection === item.href.substring(1)
-                        ? "w-full"
-                        : "w-0 group-hover:w-full"
+                        ? "page"
+                        : undefined
+                    }
+                    className={`transition-colors duration-200 relative group ${
+                      activeSection === item.href.substring(1)
+                        ? "text-green-600 font-semibold"
+                        : "text-gray-600 font-semibold hover:text-green-600"
                     }`}
-                  ></span>
-                </button>
+                  >
+                    {item.name}
+                    <span
+                      className={`absolute -bottom-1 left-0 h-0.5 bg-green-500 transition-all duration-200 ${
+                        activeSection === item.href.substring(1)
+                          ? "w-full"
+                          : "w-0 group-hover:w-full"
+                      }`}
+                    ></span>
+                  </button>
+                </li>
               )
             )}
-          </div>
+          </ul>
 
           {/* Mobile Menu */}
           <div className="flex md:hidden items-center space-x-6">

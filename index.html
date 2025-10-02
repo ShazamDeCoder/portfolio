@@ -3,13 +3,153 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Potfolio</title>
+  <title>Mubarak | Frontend Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Mubarak, a Frontend Developer in Nigeria specializing in React, JavaScript, and modern web design." />
+  <meta name="keywords"
+    content="Frontend Developer Nigeria, React Developer, JavaScript Developer, Web Developer Portfolio, UI/UX, TailwindCSS, Responsive Design" />
+  <meta name="author" content="Adio Mubarak Adebukola" />
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Mubarak | Frontend Developer Portfolio" />
+  <meta property="og:description"
+    content="Frontend Developer skilled in React, JavaScript, and building modern responsive websites." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-portfolio-domain.vercel.app" />
+  <meta property="og:image" content="https://your-portfolio-domain.vercel.app/preview.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Schema 1: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mubarak Portfolio",
+    "url": "https://your-portfolio-domain.vercel.app",
+    "logo": "https://your-portfolio-domain.vercel.app/logo.png",
+    "sameAs": [
+      "https://github.com/yourusername",
+      "https://linkedin.com/in/yourusername",
+      "https://twitter.com/yourusername"
+    ]
+  }
+  </script>
+
+  <!-- Schema 2: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adio Mubarak Adebukola",
+    "url": "https://your-portfolio-domain.vercel.app",
+    "image": "https://your-portfolio-domain.vercel.app/profile.jpg",
+    "sameAs": [
+      "https://github.com/yourusername",
+      "https://linkedin.com/in/yourusername",
+      "https://twitter.com/yourusername"
+    ],
+    "jobTitle": "Frontend Developer"
+  }
+  </script>
+
+  <!-- Schema 3: Website -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Mubarak Portfolio",
+    "url": "https://your-portfolio-domain.vercel.app",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://your-portfolio-domain.vercel.app/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Schema 4: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://your-portfolio-domain.vercel.app"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://your-portfolio-domain.vercel.app/#about"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Projects",
+        "item": "https://your-portfolio-domain.vercel.app/#projects"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Contact",
+        "item": "https://your-portfolio-domain.vercel.app/#contact"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema 5: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What do you do as a frontend developer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I design and build responsive, user-friendly websites and web applications using technologies like HTML, CSS, JavaScript, React, and TailwindCSS."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where are you based?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I am based in Ibadan, Nigeria, and I work with clients worldwide remotely."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I contact you?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can reach me through my contact form, by email at adiomubarakadebukola2026@gmail.com, or via LinkedIn and GitHub."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you take freelance projects?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, I am open to freelance opportunities and collaborations. Feel free to get in touch with details about your project."
+        }
+      }
+    ]
+  }
+  </script>
+
 </head>
 
 <body>
-  <div id="root" cla></div>
+  <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
