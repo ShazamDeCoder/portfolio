@@ -40,13 +40,13 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h3 className="text-3xl font-bold mb-6 text-green-600">My Journey</h3>
-            <p className="text-gray-600 text-xl leading-relaxed mb-6 text-justify">
-              Starting as a self-taught developer, I quickly fell in love with 
-              the creative problem-solving aspect of <strong>frontend development</strong>. 
-              From building my first HTML page to creating complex <strong>React applications</strong>, 
+            <p className="text-gray-600 text-xl leading-relaxed mb-6 text-justify [word-spacing:-1px]">
+              Starting as a self-taught developer, I quickly fell in love with
+              the creative problem-solving aspect of <strong>frontend development</strong>.
+              From building my first HTML page to creating complex <strong>React applications</strong>,
               I've consistently pushed myself to learn new technologies and improve my craft.
             </p>
-            <p className="text-gray-600 text-xl leading-relaxed text-justify">
+            <p className="text-gray-600 text-xl leading-relaxed text-justify [word-spacing:-1px]">
               Today, I focus on delivering exceptional digital experiences using 
               modern frameworks and tools. I believe in writing <strong>clean, 
               maintainable code</strong> while staying up-to-date with the latest 

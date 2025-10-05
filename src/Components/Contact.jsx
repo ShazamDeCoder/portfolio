@@ -45,7 +45,7 @@ const Contact = () => {
   const contactInfo = [
     { icon: <FiMail />, label: "Email", value: "adiomubarakadebukola2026@gmail.com", href: "mailto:adiomubarakadebukola2026@gmail.com" },
     { icon: <FiPhone />, label: "Phone", value: "+234 (907) 007-2767", href: "tel:+2349070072767" },
-    { icon: <FiMapPin />, label: "Location", value: "Ibadan, Ng", href: "#" }
+    { icon: <FiMapPin />, label: "Location", value: "Ibadan, Ng", href: "https://www.google.com/maps/place/Ibadan,+Nigeria" }
   ];
 
   const socialLinks = [
